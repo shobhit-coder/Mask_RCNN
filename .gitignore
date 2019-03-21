@@ -10,7 +10,7 @@ test/
 __pycache__/
 *.py[cod]
 *$py.class
-
+*.png
 # Distribution / packaging
 .Python
 env/
