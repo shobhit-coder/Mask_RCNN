@@ -23,7 +23,7 @@ import keras.layers as KL
 import keras.engine as KE
 import keras.models as KM
 
-from maskrcnn.mrcnn import utils
+from Mask_RCNN.mrcnn import utils
 
 # Requires TensorFlow 1.3+ and Keras 2.0.8+.
 from distutils.version import LooseVersion
@@ -1814,10 +1814,10 @@ def data_generator(dataset, config, shuffle=True, augment=False, augmentation=No
 
 
 ############################################################
-#  MaskRCNN Class
+#  Mask_RCNN Class
 ############################################################
 
-class MaskRCNN():
+class Mask_RCNN():
     """Encapsulates the Mask RCNN model functionality.
 
     The actual Keras model is in the keras_model property.

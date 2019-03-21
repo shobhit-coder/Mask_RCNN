@@ -14,12 +14,12 @@ def func(filepath,filename):
 
 	# Import Mask RCNN
 	sys.path.append(ROOT_DIR)  # To find local version of the library
-	from maskrcnn.mrcnn import utils
-	import maskrcnn.mrcnn.model as modellib
-	from maskrcnn.mrcnn import visualize
+	from Mask_RCNN.mrcnn import utils
+	import Mask_RCNN.mrcnn.model as modellib
+	from Mask_RCNN.mrcnn import visualize
 	# Import COCO config
 	sys.path.append(os.path.join(ROOT_DIR, "samples/coco/"))  # To find local version
-	from maskrcnn.samples.coco.coco import CocoConfig
+	from Mask_RCNN.samples.coco.coco import CocoConfig
 
 
 
@@ -54,7 +54,7 @@ def func(filepath,filename):
 
 
 	# Create model object in inference mode.
-	model = modellib.MaskRCNN(mode="inference", model_dir=MODEL_DIR, config=config)
+	model = modellib.Mask_RCNN(mode="inference", model_dir=MODEL_DIR, config=config)
 
 	# Load weights trained on MS-COCO
 	model.load_weights(COCO_MODEL_PATH, by_name=True)
